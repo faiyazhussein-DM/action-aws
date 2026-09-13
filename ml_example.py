@@ -54,7 +54,7 @@ async def train_model(
         model.fit(X, y)
 
         # Return model details and sample predictions
-        predictions = model.predict(X.head(5))  # first 5 rows only
+        predictions = model.predict(X.head(10))  # first 5 rows only
         return {
             "features": feature_cols,
             "target": target_col,
